@@ -77,6 +77,6 @@ if busqueda_texto:
 tabla_final = resultados.drop(columns=["Elementos"], errors="ignore")
 
 if resultados.empty:
-    st.warning("No se encontraron minerales con esa combinación.")
+    st.warning("No se encontraron minerales.")
 else:
     st.dataframe(tabla_final, use_container_width=True)
